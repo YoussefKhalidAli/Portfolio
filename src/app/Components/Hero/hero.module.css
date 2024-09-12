@@ -1,0 +1,71 @@
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 10%;
+  background: linear-gradient(to right, var(--primary100), var(--primary400)),
+    url("/light-purple-background.jpg") no-repeat center center/cover;
+  text-align: center;
+  color: black;
+}
+
+.heroContent h1 {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.heroContent p {
+  min-width: 100%;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 60vw;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btnPrimary,
+.btnSecondary {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.btnPrimary {
+  background-color: var(--btnPrimary); /* Warm orange */
+  transition: background-color 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: var(--btnPrimaryHover); /* Slightly darker on hover */
+}
+
+.btnSecondary {
+  background-color: transparent;
+  border: 2px solid white;
+  transition: background-color 0.3s ease;
+}
+
+.btnSecondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    height: auto;
+  }
+}
