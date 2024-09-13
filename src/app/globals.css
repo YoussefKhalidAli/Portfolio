@@ -3,8 +3,13 @@
   --foreground: #171717;
   --primary500: #957dad;
   --primary300: #c89dc2;
+  --primary100: #d9c2d9;
   --btnPrimary: #b085f5;
   --btnPrimaryHover: #7d56b4;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,

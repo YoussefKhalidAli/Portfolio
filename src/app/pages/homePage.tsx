@@ -19,6 +19,7 @@ import ts from "@/app/assets/technologies/ts-icon.png";
 import python from "@/app/assets/technologies/python-icon.webp";
 import cpp from "@/app/assets/technologies/cpp-icon.png";
 import node from "@/app/assets/technologies/node-icon.png";
+import ProjectsSection from "../Components/Projects/projects";
 
 // Set the array of technologies
 const technologies: Technology[] = [
@@ -41,6 +42,7 @@ export default function HomePage() {
       {technologies.map((technology) => (
         <FloaterComponent technology={technology}></FloaterComponent>
       ))}
+      <ProjectsSection></ProjectsSection>
     </div>
   );
 }
