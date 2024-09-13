@@ -1,8 +1,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary400: #957dad;
-  --primary100: #e0bbe4;
+  --primary500: #957dad;
+  --primary300: #c89dc2;
   --btnPrimary: #b085f5;
   --btnPrimaryHover: #7d56b4;
 }

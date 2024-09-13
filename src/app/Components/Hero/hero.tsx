@@ -1,3 +1,4 @@
+// Imported Styles
 import styles from "./hero.module.css";
 
 export default function HeroComponent() {
@@ -20,8 +21,13 @@ export default function HeroComponent() {
           <a href="#projects" className={styles.btnPrimary}>
             View My Work
           </a>
-          <a href="#contact" className={styles.btnSecondary}>
-            Get In Touch
+          {/* Download Resume Button */}
+          <a
+            href="/resume.pdf" // Ensure this matches the file path in `public/`
+            download="Youssef_Ali's_Resume.pdf" // Download attribute with file name
+            className={styles.btnSecondary}
+          >
+            Download Resume
           </a>
         </div>
       </div>

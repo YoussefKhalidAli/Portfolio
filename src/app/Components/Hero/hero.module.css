@@ -5,12 +5,15 @@
   align-items: flex-start;
   height: 100vh;
   padding-top: 10%;
-  background: linear-gradient(to right, var(--primary100), var(--primary400)),
-    url("/light-purple-background.jpg") no-repeat center center/cover;
+  background: linear-gradient(to right, var(--primary300), var(--primary500));
   text-align: center;
   color: black;
 }
 
+.heroContent {
+  position: relative;
+  z-index: 20;
+}
 .heroContent h1 {
   width: 100%;
   font-size: 3rem;
