@@ -1,0 +1,49 @@
+.container {
+  background-color: var(--primary100);
+  color: var(--primary600);
+  padding: 2rem;
+}
+
+.title {
+  color: var(--primary500);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  margin-bottom: 4rem;
+}
+
+.certificate {
+  max-height: 200px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--primary300);
+  padding: 1rem 0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.year {
+  color: var(--primary300);
+  font-style: italic;
+}
+
+.details {
+  margin-top: 0.5rem;
+  width: 70%;
+}

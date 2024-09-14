@@ -20,6 +20,7 @@ import python from "@/app/assets/technologies/python-icon.webp";
 import cpp from "@/app/assets/technologies/cpp-icon.png";
 import node from "@/app/assets/technologies/node-icon.png";
 import ProjectsSection from "../Components/Projects/projects";
+import CertificationsComponent from "../Components/Certificates/certificates";
 
 // Set the array of technologies
 const technologies: Technology[] = [
@@ -43,6 +44,7 @@ export default function HomePage() {
         <FloaterComponent technology={technology}></FloaterComponent>
       ))}
       <ProjectsSection></ProjectsSection>
+      <CertificationsComponent></CertificationsComponent>
     </div>
   );
 }
