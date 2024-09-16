@@ -1,0 +1,26 @@
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.experiencesContainer {
+  background-color: var(--primary100);
+  color: var(--primary600);
+  padding: 2rem;
+}
+
+.title {
+  color: var(--primary500);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.experiencesList {
+  list-style: none;
+  padding: 0;
+}
+
+.certificatesList {
+  display: flex;
+}

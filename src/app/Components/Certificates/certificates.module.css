@@ -1,0 +1,16 @@
+.certificate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+}
+
+.certificate img {
+  width: 100px;
+  cursor: pointer;
+}

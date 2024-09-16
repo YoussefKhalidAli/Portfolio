@@ -2,12 +2,7 @@
 import styles from "./floater.module.css";
 
 // Imported Types
-import { Technology } from "@/app/Types/Technology";
-
-// Setting type of props
-interface FloaterProps {
-  technology: Technology;
-}
+import { FloaterProps } from "@/app/Types/types";
 
 export default function FloaterComponent({ technology }: FloaterProps) {
   return (

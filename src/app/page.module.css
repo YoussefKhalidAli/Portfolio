@@ -16,12 +16,6 @@
   font-family: var(--font-geist-sans);
 }
 
-.container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
