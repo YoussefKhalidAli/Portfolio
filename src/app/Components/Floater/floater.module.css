@@ -6,14 +6,13 @@
   color: white;
   font-size: 20px;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255, 0.35);
+  background-color: rgb(255, 255, 255, 0.1);
   box-shadow: 0 0 80px 5px var(--accent100);
   animation: float 3s ease-in-out infinite;
   z-index: 10;
 }
 
 /* Float animation */
-
 @keyframes float {
   0%,
   100% {

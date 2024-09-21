@@ -12,17 +12,20 @@
 }
 
 .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 90vh;
-  width: 60vw;
+  width: auto;
   background: white;
   border-radius: 8px;
   padding: 1rem;
   position: relative;
 }
 
-.modal img {
+.modal {
   height: 90%;
-  width: auto;
+  width: 50vw;
   max-width: 55vw;
 }
 
