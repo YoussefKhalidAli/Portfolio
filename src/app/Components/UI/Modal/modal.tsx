@@ -1,5 +1,5 @@
 // Imported Styles
-import styles from "./Modal.module.css";
+import styles from "./modal.module.css";
 
 // Imported Utils
 import Image from "next/image";
