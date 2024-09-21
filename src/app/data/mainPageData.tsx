@@ -1,3 +1,4 @@
+// Imported Technology Logos
 import react from "@/app/assets/technologies/react-icon.png";
 import next from "@/app/assets/technologies/nextjs-icon.png";
 import angular from "@/app/assets/technologies/angular-icon.png";
@@ -9,6 +10,7 @@ import python from "@/app/assets/technologies/python-icon.webp";
 import cpp from "@/app/assets/technologies/cpp-icon.png";
 import node from "@/app/assets/technologies/node-icon.png";
 
+// Set technologies value
 export const technologies: Technology[] = [
   { path: react.src, positionX: 14, positionY: 8 },
   { path: next.src, positionX: 7, positionY: 22 },
@@ -22,11 +24,12 @@ export const technologies: Technology[] = [
   { path: node.src, positionX: 83.7, positionY: 80 },
 ];
 
+// Imported Certificates
 import datacom from "@/app/assets/certificates/Datacom.png";
 import security from "@/app/assets/certificates/Security.png";
 import AICE from "@/app/assets/certificates/AICE.png";
-import { Certificate, Project, Technology } from "../Types/types";
 
+// Set projects value
 export const projects: Project[] = [
   {
     title: "Blog Platform",
@@ -64,6 +67,11 @@ export const projects: Project[] = [
     link: "https://github.com/YoussefKhalidAli/BakeryLandingPage",
   },
 ];
+
+// Imported Types
+import { Certificate, Project, Technology } from "../Types/types";
+
+// Set certificates value
 export const certs: Certificate[] = [
   {
     title: "HCIA Data Communication",

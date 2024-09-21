@@ -1,5 +1,7 @@
-import React from "react";
-import styles from "./Modal.module.css"; // Import the CSS module for styling
+// Imported Styles
+import styles from "./Modal.module.css";
+
+// Imported Types
 import { ModalProps } from "@/app/Types/types";
 
 export default function ModalComponent({ settings }: ModalProps) {

@@ -1,4 +1,7 @@
+// Imported Styles
 import styles from "./experience.module.css";
+
+// Imported Types
 import { ExperienceProps } from "@/app/Types/types";
 
 export default function ExperienceComponent({ experience }: ExperienceProps) {

@@ -1,12 +1,20 @@
 "use client";
 
-import Link from "next/link";
+// Imported Styles
 import styles from "./projects.module.css";
 
-import github from "@/app/assets/github-cover.png";
+// Imported Utils
+import Link from "next/link";
 import { useEffect } from "react";
+
+// Imported Types
 import { ProjectProps } from "@/app/Types/types";
+
+// Imported Assets
+import github from "@/app/assets/github-cover.png";
+
 export default function ProjectComponent({ project }: ProjectProps) {
+  //Trigger project animation
   useEffect(() => {
     const cards = document.querySelectorAll(`.${styles.projectCard}`);
     const observer = new IntersectionObserver(

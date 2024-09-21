@@ -1,18 +1,15 @@
 // Imported Styles
 import styles from "./homePage.module.css";
 
+// Imported Utils
+import { certs, projects, technologies } from "@/app/data/mainPageData";
+
 // Imported Components
 import HeroComponent from "../../Components/Hero/hero";
 import FloaterComponent from "../../Components/Floater/floater";
-
-// Imported Assets
-
 import CertificatesComponent from "../../Components/Certificates/certificates";
-import { certs, projects, technologies } from "@/app/data/mainPageData";
 import ProjectComponent from "@/app/Components/Projects/projects";
 import CallToActionComponent from "@/app/Components/CTA/cta";
-
-// Set the array of technologies
 
 export default function HomePage() {
   return (

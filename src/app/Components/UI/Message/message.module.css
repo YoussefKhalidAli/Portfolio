@@ -1,24 +1,13 @@
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .message {
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 5vh;
+  top: 3vh;
   left: 37.5vw;
   width: 25vw;
   height: 10vh;
+  padding: 1rem;
   border-radius: 2rem;
   background-color: rgb(255, 255, 255, 0.5);
   animation: fade 5s;
@@ -30,4 +19,17 @@
 
 .error {
   color: red;
+}
+
+/* fade animation */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

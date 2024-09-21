@@ -14,16 +14,16 @@ export default function CallToActionComponent() {
         </p>
         <div className={styles.buttons}>
           <Link href="/pages/Contact" className={styles.btnPrimary}>
-            Hire Me
+            Connect
           </Link>
-          {/* <a
-            href="https://calendly.com/yourname"
+          <a
+            href="https://calendly.com/yossofwd"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.btnSecondary}
           >
             Schedule a Call
-          </a> */}
+          </a>
         </div>
       </div>
     </section>

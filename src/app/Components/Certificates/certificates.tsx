@@ -1,13 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+// Imported Styles
 import styles from "./certificates.module.css";
+
+// Imported Utils
+import { useEffect, useState } from "react";
+
+// Imported Types
 import { CertificateProps } from "@/app/Types/types";
+
+// Imported Components
 import ModalComponent from "../UI/Modal/modal";
 
 export default function CertificatesComponent({
   certificate,
 }: CertificateProps) {
+  // Trigger certificate animation
   useEffect(() => {
     const certs = document.querySelectorAll(`.${styles.certificate}`);
     const observer = new IntersectionObserver(
@@ -30,7 +38,8 @@ export default function CertificatesComponent({
 
   const [modalImage, setModalImage] = useState<string>("none");
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
-  const s = {
+
+  const modalSettings = {
     isOpen: modalIsOpen,
     path: modalImage,
     closeModal: () => closeModal(),
@@ -48,7 +57,9 @@ export default function CertificatesComponent({
     <li className={`${styles.certificate} ${styles.fadeIn}`}>
       <h3 className={styles.title}>{certificate.title}</h3>
       <img src={certificate.path} onClick={() => openModal()} />
-      {s.isOpen && <ModalComponent settings={s}></ModalComponent>}
+      {modalSettings.isOpen && (
+        <ModalComponent settings={modalSettings}></ModalComponent>
+      )}
     </li>
   );
 }

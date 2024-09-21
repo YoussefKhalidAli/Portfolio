@@ -13,6 +13,7 @@
   position: relative;
   z-index: 20;
 }
+
 .heroContent h1 {
   width: 100%;
   font-size: 3rem;
@@ -48,12 +49,12 @@
 }
 
 .btnPrimary {
-  background-color: var(--btnPrimary); /* Warm orange */
+  background-color: var(--btnPrimary);
   transition: background-color 0.3s ease;
 }
 
 .btnPrimary:hover {
-  background-color: var(--btnPrimaryHover); /* Slightly darker on hover */
+  background-color: var(--btnPrimaryHover);
 }
 
 .btnSecondary {

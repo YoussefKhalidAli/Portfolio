@@ -1,8 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+// Imported Styles
 import styles from "./contact.module.css";
-import emailjs from "emailjs-com"; // Import the EmailJS library
+
+// Imported Utils
+import { useState, useEffect } from "react";
+import emailjs from "emailjs-com";
+
+// Imported Component
 import MessageComponent from "@/app/Components/UI/Message/message";
 
 export default function Contact() {
@@ -37,6 +42,7 @@ export default function Contact() {
     };
 
     try {
+      // Send email
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
@@ -54,6 +60,7 @@ export default function Contact() {
   };
 
   useEffect(() => {
+    // Set timer to delete message
     let timer: NodeJS.Timeout;
     if (isSuccess || errorMessage) {
       timer = setTimeout(() => {
@@ -96,7 +103,6 @@ export default function Contact() {
             value={formData.name}
             onChange={handleChange}
             required
-            className={`${isSubmitting && styles.loading}`}
           />
         </div>
 
@@ -109,7 +115,6 @@ export default function Contact() {
             value={formData.email}
             onChange={handleChange}
             required
-            className={`${isSubmitting && styles.loading}`}
           />
         </div>
 
