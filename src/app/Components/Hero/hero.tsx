@@ -23,8 +23,8 @@ export default function HeroComponent() {
           </a>
           {/* Download Resume Button */}
           <a
-            href="/resume.pdf" // Ensure this matches the file path in `public/`
-            download="Youssef_Ali's_Resume.pdf" // Download attribute with file name
+            href="/resume.pdf"
+            download="Youssef_Ali's_Resume.pdf"
             className={styles.btnSecondary}
           >
             Download Resume

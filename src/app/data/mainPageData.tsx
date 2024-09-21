@@ -1,14 +1,3 @@
-// Imported Styles
-import styles from "./homePage.module.css";
-
-// Imported Types
-import { Technology } from "../../Types/types";
-
-// Imported Components
-import HeroComponent from "../../Components/Hero/hero";
-import FloaterComponent from "../../Components/Floater/floater";
-
-// Imported Assets
 import react from "@/app/assets/technologies/react-icon.png";
 import next from "@/app/assets/technologies/nextjs-icon.png";
 import angular from "@/app/assets/technologies/angular-icon.png";
@@ -19,11 +8,8 @@ import ts from "@/app/assets/technologies/ts-icon.png";
 import python from "@/app/assets/technologies/python-icon.webp";
 import cpp from "@/app/assets/technologies/cpp-icon.png";
 import node from "@/app/assets/technologies/node-icon.png";
-import ProjectsSection from "../../Components/Projects/projects";
-import CertificatesComponent from "../../Components/Certificates/certificates";
 
-// Set the array of technologies
-const technologies: Technology[] = [
+export const technologies: Technology[] = [
   { path: react.src, positionX: 14, positionY: 8 },
   { path: next.src, positionX: 7, positionY: 22 },
   { path: angular.src, positionX: 18, positionY: 40 },
@@ -39,9 +25,46 @@ const technologies: Technology[] = [
 import datacom from "@/app/assets/certificates/Datacom.png";
 import security from "@/app/assets/certificates/Security.png";
 import AICE from "@/app/assets/certificates/AICE.png";
-import ExperienceComponent from "../../Components/Experience/experience";
+import { Certificate, Project, Technology } from "../Types/types";
 
-const certs = [
+export const projects: Project[] = [
+  {
+    title: "Blog Platform",
+    details:
+      "Full-Stack MERN blog websites with user authentication and post management.",
+    link: "https://github.com/YoussefKhalidAli/Blog-website",
+  },
+  {
+    title: "Expense Tracker",
+    details:
+      "A mobile app for tracking expenses using React Native, providing aclean and intuitive user interface.",
+    link: "https://github.com/YoussefKhalidAli/expense-tracker",
+  },
+  {
+    title: "Profile Finder",
+    details:
+      "An Angular web app enabling users to search for and view profiles with advanced search functionality and a responsive design.",
+    link: "https://github.com/YoussefKhalidAli/maid.cc_Application",
+  },
+  {
+    title: "Meal Findet",
+    details:
+      "A recipe app built with React Native, featuring navigation for a smooth user experience.",
+    link: "https://github.com/YoussefKhalidAli/meal-finder",
+  },
+  {
+    title: "Todo List",
+    details:
+      "A todo-list app built with React Native featuring state management.",
+    link: "https://github.com/YoussefKhalidAli/mobile-todo-list",
+  },
+  {
+    title: "Bakery Landing Page",
+    details: "A simple landing page for a made-up bakery made using React",
+    link: "https://github.com/YoussefKhalidAli/BakeryLandingPage",
+  },
+];
+export const certs: Certificate[] = [
   {
     title: "HCIA Data Communication",
     year: 2024,
@@ -63,39 +86,4 @@ const certs = [
       "This certificate is awarded by African Leadership Group; this certificate indicates proficiency foundational knowledge and practical skills in artificial intelligence. It covers key AI concepts, tools, and techniques.",
     path: AICE.src,
   },
-  // Add more awards and certifications as needed
 ];
-
-export default function HomePage() {
-  return (
-    <div className={styles.container}>
-      <HeroComponent></HeroComponent>
-      {technologies.map((technology) => (
-        <FloaterComponent technology={technology}></FloaterComponent>
-      ))}
-      <ProjectsSection></ProjectsSection>
-      <section className={styles.experiencesContainer}>
-        <h2 className={styles.title}>Professional Experience</h2>
-        <ul className={styles.experiencesList}>
-          {certs.map((exp, index) => (
-            <ExperienceComponent
-              experience={exp}
-              key={index}
-            ></ExperienceComponent>
-          ))}
-        </ul>
-      </section>
-      <section className={styles.certificatesContainer}>
-        <h2 className={styles.title}>Certificates and Internships</h2>
-        <ul className={styles.certificatesList}>
-          {certs.map((exp, index) => (
-            <CertificatesComponent
-              certificate={exp}
-              key={index}
-            ></CertificatesComponent>
-          ))}
-        </ul>
-      </section>
-    </div>
-  );
-}

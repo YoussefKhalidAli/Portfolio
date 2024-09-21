@@ -1,12 +1,15 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary600: #7a5a8a;
-  --primary500: #957dad;
-  --primary300: #c89dc2;
-  --primary100: #d9c2d9;
-  --btnPrimary: #b085f5;
-  --btnPrimaryHover: #7d56b4;
+  --background: #1c1f2b; /* Dark Navy Blue */
+  --foreground: #e6e6e6; /* Light Grey for text */
+  --primary800: #37394e; /* Dark Muted Blue */
+  --primary600: #505375; /* Medium Muted Blue */
+  --primary500: #676b94; /* Softer Blue */
+  --primary300: #8e91b1; /* Light Soft Blue */
+  --primary100: #c0c3d6; /* Very Light Blue */
+  --accent100: #ffb74d; /* Bright Orange for accents */
+  --gray: #808080; /* Medium Gray for neutral elements */
+  --btnPrimary: #39a6a3; /* Cyan for primary buttons */
+  --btnPrimaryHover: #2e8f89; /* Slightly darker cyan for hover */
 }
 
 html {
@@ -16,7 +19,6 @@ html {
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 body {

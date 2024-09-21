@@ -1,0 +1,33 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.message {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5vh;
+  left: 37.5vw;
+  width: 25vw;
+  height: 10vh;
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255, 0.5);
+  animation: fade 5s;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}

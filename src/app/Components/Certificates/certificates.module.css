@@ -14,3 +14,12 @@
   width: 100px;
   cursor: pointer;
 }
+
+.fadeIn {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+}

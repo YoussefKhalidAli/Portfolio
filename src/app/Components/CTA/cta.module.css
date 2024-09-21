@@ -1,0 +1,45 @@
+.ctaSection {
+  background-color: transparent;
+  padding: 50px 20px;
+  text-align: center;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.heading {
+  font-size: 36px;
+  color: var(--accent100);
+  margin-bottom: 20px;
+}
+.paragraph {
+  font-size: 18px;
+  color: var(--grey);
+  margin-bottom: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.btnPrimary {
+  background-color: #60c2a8;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btnPrimary:hover {
+  background-color: var(--btnPrimaryHover); /* Slightly darker on hover */
+}
+
+.btnSecondary {
+  background-color: #6f5c89;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}

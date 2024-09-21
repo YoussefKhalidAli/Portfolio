@@ -10,6 +10,12 @@ export interface Experience {
   year: number;
 }
 
+export interface Project {
+  title: string;
+  details: string;
+  link: string;
+}
+
 export interface Certificate extends Experience {
   path: string;
 }
@@ -28,10 +34,19 @@ export interface ExperienceProps {
   experience: Experience;
 }
 
+export interface ProjectProps {
+  project: Project;
+}
+
 export interface CertificateProps {
   certificate: Certificate;
 }
 
 export interface ModalProps {
   settings: Settings;
+}
+
+export interface MessageProps {
+  message: string;
+  type: string;
 }
