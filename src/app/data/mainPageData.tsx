@@ -40,7 +40,7 @@ export const projects: Project[] = [
   {
     title: "Expense Tracker",
     details:
-      "A mobile app for tracking expenses using React Native, providing aclean and intuitive user interface.",
+      "A mobile app for tracking expenses using React Native, providing a clean and intuitive user interface.",
     link: "https://github.com/YoussefKhalidAli/expense-tracker",
   },
   {
