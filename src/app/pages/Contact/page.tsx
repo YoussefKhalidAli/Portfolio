@@ -91,7 +91,7 @@ export default function Contact() {
         </a>
       </p>
 
-      <h2>Can't wait? Connect Now!</h2>
+      <h2>Can&#39;t wait? Connect Now!</h2>
 
       <form className={styles.contactForm} onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
