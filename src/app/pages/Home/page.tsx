@@ -15,8 +15,11 @@ export default function HomePage() {
   return (
     <div className={styles.container}>
       <HeroComponent></HeroComponent>
-      {technologies.map((technology) => (
-        <FloaterComponent technology={technology}></FloaterComponent>
+      {technologies.map((technology, index) => (
+        <FloaterComponent
+          technology={technology}
+          key={index}
+        ></FloaterComponent>
       ))}
       <section className={styles.projectsSection} id="projects">
         <h2 className={styles.heading}>Personal Projects</h2>
