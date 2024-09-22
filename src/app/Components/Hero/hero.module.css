@@ -73,5 +73,6 @@
 @media (max-width: 1000px) {
   .hero {
     height: auto;
+    padding-bottom: 1rem;
   }
 }
