@@ -1,8 +1,15 @@
+import mixpanel from "mixpanel-browser";
 import styles from "./cta.module.css";
 
 import Link from "next/link";
 
 export default function CallToActionComponent() {
+  const connectInitiated = () => {
+    mixpanel.track("Connect Initiated", {
+      button_name: "Connect",
+      page: "Main",
+    });
+  };
   return (
     <section className={styles.ctaSection}>
       <div className={styles.container}>
@@ -13,7 +20,11 @@ export default function CallToActionComponent() {
           I can contribute to your team.
         </p>
         <div className={styles.buttons}>
-          <Link href="/pages/Contact" className={styles.btnPrimary}>
+          <Link
+            href="/pages/Contact"
+            className={styles.btnPrimary}
+            onClick={() => connectInitiated()}
+          >
             Connect
           </Link>
           <a
