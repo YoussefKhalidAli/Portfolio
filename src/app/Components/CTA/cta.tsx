@@ -1,5 +1,12 @@
 // Imported Styles
+// Imported Styles
 import styles from "./cta.module.css";
+
+// Imported Utils
+import mixpanel from "mixpanel-browser";
+
+// Imported Utils
+import mixpanel from "mixpanel-browser";
 
 // Imported Utils
 import mixpanel from "mixpanel-browser";
