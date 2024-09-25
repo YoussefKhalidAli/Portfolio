@@ -1,4 +1,5 @@
 // Imported Styles
+import mixpanel from "mixpanel-browser";
 import styles from "./hero.module.css";
 
 export default function HeroComponent() {
@@ -25,6 +26,7 @@ export default function HeroComponent() {
           <a
             href="/resume.pdf"
             download="Youssef_Ali's_Resume.pdf"
+            onClick={() => mixpanel.track("Download Resume", {})}
             className={styles.btnSecondary}
           >
             Download Resume

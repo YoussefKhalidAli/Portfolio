@@ -1,4 +1,5 @@
 // Imported Styles
+import mixpanel from "mixpanel-browser";
 import styles from "./cta.module.css";
 
 // Imported Utils
@@ -22,6 +23,7 @@ export default function CallToActionComponent() {
             href="https://calendly.com/yossofwd"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => mixpanel.track("Initiate contact", {})}
             className={styles.btnSecondary}
           >
             Schedule a Call
