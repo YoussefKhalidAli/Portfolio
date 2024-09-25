@@ -1,5 +1,8 @@
-import mixpanel from "mixpanel-browser";
+// Imported Styles
 import styles from "./cta.module.css";
+
+// Imported Utils
+import mixpanel from "mixpanel-browser";
 
 import Link from "next/link";
 
@@ -10,6 +13,7 @@ export default function CallToActionComponent() {
       page: "Main",
     });
   };
+
   return (
     <section className={styles.ctaSection}>
       <div className={styles.container}>

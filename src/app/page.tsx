@@ -7,7 +7,9 @@ import mixpanel from "mixpanel-browser";
 
 export default function Home() {
   useEffect(() => {
-    mixpanel.init("57138c3bac41b3081f111a8e5deded12", { debug: true });
+    mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_PROJECT_TOKEN!, {
+      debug: true,
+    });
   }, []);
 
   return <HomePage></HomePage>;

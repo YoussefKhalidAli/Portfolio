@@ -1,6 +1,8 @@
 // Imported Styles
-import mixpanel from "mixpanel-browser";
 import styles from "./hero.module.css";
+
+// Imported Utils
+import mixpanel from "mixpanel-browser";
 
 export default function HeroComponent() {
   const downloadResume = () => {
