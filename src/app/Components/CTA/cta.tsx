@@ -1,4 +1,3 @@
-import mixpanel from "mixpanel-browser";
 // Imported Styles
 import styles from "./cta.module.css";
 
