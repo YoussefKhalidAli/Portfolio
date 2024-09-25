@@ -1,3 +1,5 @@
+"use client";
+
 // Imported Styles
 import mixpanel from "mixpanel-browser";
 import styles from "./cta.module.css";
