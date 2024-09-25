@@ -28,7 +28,7 @@ export default function HeroComponent() {
           <a
             href="/resume.pdf"
             download="Youssef_Ali's_Resume.pdf"
-            onClick={() => mixpanel.track("Download Resume", {})}
+            onClick={() => mixpanel.track("Download resume", {})}
             className={styles.btnSecondary}
           >
             Download Resume

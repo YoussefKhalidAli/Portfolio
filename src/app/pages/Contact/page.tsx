@@ -6,11 +6,16 @@ import styles from "./contact.module.css";
 // Imported Utils
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import mixpanel from "mixpanel-browser";
 
 // Imported Component
 import MessageComponent from "@/app/Components/UI/Message/message";
 
 export default function Contact() {
+  useEffect(() => {
+    mixpanel.track("Contact initiated", {});
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
