@@ -1,3 +1,5 @@
+"use client";
+
 // Imported Components
 import HomePage from "./pages/Home/page";
 
