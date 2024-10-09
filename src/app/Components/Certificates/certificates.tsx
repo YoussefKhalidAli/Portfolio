@@ -42,6 +42,7 @@ export default function CertificatesComponent({
   const modalSettings = {
     isOpen: modalIsOpen,
     path: modalImage,
+    details: certificate.details,
     closeModal: () => closeModal(),
   };
 

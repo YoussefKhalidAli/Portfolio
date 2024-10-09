@@ -24,11 +24,6 @@ export const technologies: Technology[] = [
   { path: node.src, positionX: 83.7, positionY: 80 },
 ];
 
-// Imported Certificates
-import datacom from "@/app/assets/certificates/Datacom.png";
-import security from "@/app/assets/certificates/Security.png";
-import AICE from "@/app/assets/certificates/AICE.png";
-
 // Set projects value
 export const projects: Project[] = [
   {
@@ -71,8 +66,21 @@ export const projects: Project[] = [
 // Imported Types
 import { Certificate, Project, Technology } from "../Types/types";
 
+// Imported Certificates
+import datacom from "@/app/assets/certificates/Datacom.png";
+import security from "@/app/assets/certificates/Security.png";
+import AICE from "@/app/assets/certificates/AICE.png";
+import LEAP from "@/app/assets/certificates/LEAP.png";
+
 // Set certificates value
 export const certs: Certificate[] = [
+  {
+    title: "LEAP",
+    year: 2024,
+    details:
+      "This certificate is awarded by ALEXBANK; this certificate indicates completion of the LEAP internship program.",
+    path: LEAP.src,
+  },
   {
     title: "HCIA Data Communication",
     year: 2024,

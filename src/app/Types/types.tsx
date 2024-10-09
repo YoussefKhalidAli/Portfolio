@@ -23,6 +23,7 @@ export interface Certificate extends Experience {
 export interface Settings {
   isOpen: boolean;
   path: string;
+  details: string;
   closeModal: () => void;
 }
 

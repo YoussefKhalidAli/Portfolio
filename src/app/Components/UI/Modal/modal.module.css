@@ -13,24 +13,37 @@
 
 .modal {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 95vh;
   width: auto;
+  padding: 1rem 3rem;
   background: white;
   border-radius: 8px;
-  padding: 1rem;
   position: relative;
 }
 
-.modal {
-  height: 90%;
-  width: 50vw;
-  max-width: 55vw;
+.modal p {
+  width: auto;
+  max-width: 45vw;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.modal img {
+  width: auto;
+  max-height: 80vh;
+  margin-top: 2vh;
 }
 
 @media (max-width: 1000px) {
   .modal {
-    width: 80vw;
+    width: 85vw;
+  }
+
+  .modal img,
+  .modal p {
+    max-width: 75vw;
   }
 }
