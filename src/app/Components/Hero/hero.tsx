@@ -10,12 +10,12 @@ export default function HeroComponent() {
       <div className={styles.heroContent}>
         <h1>Youssef Khalid Abdullah Ali</h1>
         <p>
-          Software developer with hands-on experience in full-stack web
-          development. Proficient in both front-end and back-end technologies.
-          Adept at creating scalable, user-centric web applications and mobile
-          solutions. Demonstrated expertise in software development lifecycle
-          management, problem-solving, and collaborative teamwork. Eager to take
-          on new challenges in dynamic development environments.
+          Software developer proficient in both front-end and back-end
+          technologies. Adept at creating scalable, user-centric web
+          applications and mobile solutions. Demonstrated expertise in software
+          development lifecycle management, problem-solving, and collaborative
+          teamwork. Eager to take on new challenges in dynamic development
+          environments.
         </p>
         <div className={styles.ctaButtons}>
           <a href="#projects" className={styles.btnPrimary}>

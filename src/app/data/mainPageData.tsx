@@ -92,7 +92,7 @@ export const certs: Certificate[] = [
     title: "HCIA Network Security",
     year: 2024,
     details:
-      "This certificate is awarded by Huwaei; this certificate indicates proficiency in foundational knowledge in network security principles, including implementing and managing security policies, firewalls, VPNs, and threat mitigation techniques. It demonstrates expertise in protecting network infrastructure and ensuring data integrity and confidentiality.",
+      "This certificate is awarded by Huwaei; this certificate indicates proficiency in foundational knowledge in network security principles, including implementing and managing security policies, firewalls, VPNs, and threat mitigation techniques.",
     path: security.src,
   },
   {
